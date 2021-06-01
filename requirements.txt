@@ -10,5 +10,5 @@ scikit-learn==0.22.2post1
 matplotlib>=1.4.3
 pandas>=0.19
 nltk>=3.4.5
-Cython>=0.28.5
+cython>=0.28.5
 
