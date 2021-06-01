@@ -25,25 +25,25 @@ def home():
 @app.route('/predict',methods=['POST'])
 
 def predict():
+    
 
-
-	if request.method == 'POST':
-		gene = request.form['gene']
-		data1 = [gene]
-		onehotgene = gene_vectorizer.transform(data1)
-        variation=request.form['variation'] 
-        data2=[variation]
-        onehotvariation=variation_vectorizer.transformer(data2)
-        text=request.form['text'] 
-        data3=[text]
-        onehottext=text_vectorizer.transformer(data3)
-        onehottext=normalize(onehottext,axis=0)
+ if request.method == 'POST':
+  gene = request.form['gene']
+  data1 = [gene]
+  onehotgene = gene_vectorizer.transform(data1)
+  variation=request.form['variation'] 
+  data2=[variation]
+  onehotvariation=variation_vectorizer.transformer(data2)
+  text=request.form['text'] 
+  data3=[text]
+  onehottext=text_vectorizer.transformer(data3)
+  onehottext=normalize(onehottext,axis=0)
         
-        test_gene_var_onehotCoding = hstack((onehotgene,onehotvariation))
-        test_onehot=hstack((test_gene_var_onehotCoding,onehottext))
-        
-		my_prediction = clf.predict(test_onehot)
-    return render_template('result.html',prediction = my_prediction)
+  test_gene_var_onehotCoding = hstack((onehotgene,onehotvariation))
+  test_onehot=hstack((test_gene_var_onehotCoding,onehottext))
+         
+  my_prediction = clf.predict(test_onehot)
+ return render_template('result.html',prediction = my_prediction)
 
 
 if __name__ == '__main__':
