@@ -1,56 +1,85 @@
+::-webkit-scrollbar{
+	display: none;
+}
+
+html{
+	height: 100%;
+	margin: 0;
+}
+
 body{
-	font:15px/1.5 Arial, Helvetica,sans-serif;
+	font-family: 'Lato', sans-serif;
 	padding: 0px;
-	background-color:#f4f3f3;
+	background: linear-gradient(to right, rgb(225, 0, 255,0.5), rgb(255, 77, 0,0.5));
+	background-image: url(cancer.jpg);
+	background-size: cover;
+	font-size: 15px;
+	line-height: 1;
+	text-align:left;
 }
 
 .container{
-	width:100%;
-	margin: auto;
-	overflow: hidden;
+	text-align:left;
+    margin: 0;
+    font-variant: small-caps;
 }
 
-header{
-	background:#03A9F4;#35434a;
-	border-bottom:#448AFF 3px solid;
-	height:120px;
-	width:100%;
-	padding-top:30px;
-
+.heading_first{
+	/*font-family: 'Open Sans', sans-serif;*/
+	font-size: 4.5em;
+	font-weight: 150;
 }
 
-.main-header{
-			text-align:center;
-			background-color: blue;
-			height:100px;
-			width:100%;
-			margin:0px;
-		}
-#brandname{
-	float:left;
-	font-size:30px;
-	color: #fff;
+.description{
+    font-size: 20px;
+	font-weight: 100;
 	margin: 10px;
 }
 
-header h2{
+.main-header{
+	display: flex;
+    display: -webkit-flex;
+    display: -moz-flex;
+	justify-content: space-around;
+	-webkit-justify-content: space-around;
+    -moz-justify-content: space-around;
 	text-align:center;
-	color:rgb(36, 170, 3);
+	height:auto;
+	width:100%;
+	margin:2px;
+	padding:10px;
+}
+
+.block{
+	border-radius: 15px 15px 15px 15px;
+	background: linear-gradient(to right, rgb(225, 0, 255,0.5), rgb(255, 77, 0,0.5));
+	color: #000000;
+	padding: 10px;
+	margin: 5px;
+	width: auto;
+    height: auto;
 
 }
 
-
-
-.btn-info {background-color: #2196F3;
+.btn-info {
+	border-radius: 5px 5px 5px 5px;
+	background-color: #e69ce6;
 	height:40px;
-	width:100px;} /* Blue */
-.btn-info:hover {background: #0b7dda;}
+	width:100px;
+	}
+.btn-info:hover {
+	background: #ff65ff;
+}
 
 
-.resultss{
-	border-radius: 15px 50px;
-    background: #345fe4;
-    padding: 20px; 
-    width: 200px;
+.results{
+	text-align:left;
+	padding: 20px; 
+    width: 230px;
     height: 150px;
+	font-size: 20px;
+	font-weight: 100;
+	margin: 10px;
+	border-radius: 15px 15px 15px 15px;
+    background: linear-gradient(to right, rgb(225, 0, 255), rgb(255, 77, 0));
 }
