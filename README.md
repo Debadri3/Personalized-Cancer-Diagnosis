@@ -2,7 +2,7 @@ AWS Elastic Beanstalk deployment URL: http://personalizedcancerdiagnosis-env.eba
 
 Blog post for the project: https://medium.com/analytics-vidhya/redefining-cancer-treatment-the-memorial-sloan-way-b71ef4eed284
 
-#Steps to run the project on your local host-
+# Steps to run the project on your local host-
 1. Clone the repository and open the command prompt in the clone directory.
 2. Install required packages pip install -r requirements.txt
 3. Run the 'application.py' file. python application.py
