@@ -1,1 +1,9 @@
-Please check attached pdf for workflow explanation.Personal project for prediction of a cancer mutation label based on text and gene features. Libraries used: Scikit-learn, Matplotlib, Seaborn, Numpy, Pandas, MLXtend, etc
+AWS Elastic Beanstalk deployment URL: http://personalizedcancerdiagnosis-env.eba-wdesm7nm.us-east-2.elasticbeanstalk.com/ 
+
+Blog post for the project: https://medium.com/analytics-vidhya/redefining-cancer-treatment-the-memorial-sloan-way-b71ef4eed284
+
+##Steps to run the project on your local host-
+
+1.Clone the repository and open the command prompt in the clone directory.
+2. Install required packages pip install -r requirements.txt
+3. Run the 'application.py' file. python application.py
