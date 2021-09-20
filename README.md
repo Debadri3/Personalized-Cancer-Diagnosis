@@ -1,4 +1,4 @@
-AWS Elastic Beanstalk deployment URL: http://personalizedcancerdiagnosis-env.eba-wdesm7nm.us-east-2.elasticbeanstalk.com/ 
+AWS Elastic Beanstalk deployment URL: http://personalizedcancerdiagnosis-env.eba-mqtnsamu.us-east-2.elasticbeanstalk.com/
 
 Blog post for the project: https://medium.com/analytics-vidhya/redefining-cancer-treatment-the-memorial-sloan-way-b71ef4eed284
 
