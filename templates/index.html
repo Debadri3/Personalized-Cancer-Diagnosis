@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Personalized Cancer Diagnosis</title>
+    <link rel="shortcut icon" href="{{ url_for('static', filename='netflix.ico') }}">
+    <link rel="stylesheet" type="text/css" href="../static/styles.css">
+    <script src="https://kit.fontawesome.com/5f3f547070.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+
+<body>
+    <!-- Website Title -->
+    <div class="container">
+        <h2 class='container-heading'><span class='heading_first'>Personalized Diagnosis for </span><span
+                class="heading_second">Cancer</span></h2>
+        <div>
+            <p>A Machine Learning Web App, Built with Flask, Deployed on the Cloud</p>
+        </div>
+        <p class='description'><strong>Please fill all fields with required text</strong></p>
+    </div>
+    <hr>
+    <!-- Prediction Area -->
+    <div class="prediction-area">
+            <!-- TV series Banner - 1 -->
+            <div class='ipl-banner-left'>
+                <div class="slider-frame">
+                    <div class="slide-images-up">
+
+                        <!-- Image-1 -->
+                        <div class="image-container">
+                            <img class="image-width" src="{{ url_for('static', filename='1.png') }}"
+                                >
+                        </div>
+                        <!-- Image-2 -->
+                        <div class="image-container">
+                            <img class="image-width" src="{{ url_for('static', filename='2.png') }}"
+                                >
+                        </div>
+                        <!-- Image-3 -->
+                        <div class="image-container">
+                            <img class="image-width" src="{{ url_for('static', filename='3.png') }}"
+                                >
+                        </div>
+                        <!-- Image-4 -->
+                        <div class="image-container">
+                            <img class="image-width" src="{{ url_for('static', filename='4.png') }}"
+                                >
+                        </div>
+                        <!-- Image-5 -->
+                        <div class="image-container">
+                            <img class="image-width" src="{{ url_for('static', filename='5.png') }}"
+                                >
+                        </div>
+                        <!-- Image-6 -->
+                        <div class="image-container">
+                            <img class="image-width" src="{{ url_for('static', filename='6.png') }}"
+                                >
+                        </div>
+                        <!-- Image-7 -->
+                        <!-- <div class="image-container">
+                            <img class="image-width" src="{{ url_for('static', filename='7.png') }}"
+                                >
+                        </div> -->
+                        <!-- Image-8 -->
+                        <!-- <div class="image-container">
+                            <img class="image-width" src="{{ url_for('static', filename='8.png') }}"
+                                >
+                        </div> -->
+
+                    </div>
+                </div>
+            </div>
+            <!-- Prediction Form -->
+            <div class='div2'>
+                <form action="predict" method="POST">
+                    <div class="block">
+                        <p>Enter Gene Here</p>
+                        <textarea class="form-input" name="gene" type="text" rows="2" cols="50" placeholder="FAM58A"
+                            required="required"></textarea>
+                    </div>
+                    <div class="block">
+                        <p>Enter Variation Here</p>
+                        <textarea class="form-input" name="variation" type="text" rows="2" cols="50"
+                            placeholder="Truncating Mutations" required="required"></textarea>
+                    </div>
+                    <div class="block">
+                        <p>Enter Corresponding Literature (Text) Here</p>
+                        <textarea class="form-input" name="text" type="text" rows="20" cols="50"
+                            placeholder="Cyclin-dependent kinases (CDKs) regulate a variety of fundamental cellular processes. CDK10 stands out as one of the last orphan CDKs for which no activating cyclin has been identified and no kinase activity revealed. Previous work has shown that CDK10 silencing increases ETS2 (v-ets erythroblastosis virus E26 oncogene homolog 2)-driven activation of the MAPK pathway, which confers tamoxifen resistance to breast cancer cells."
+                            required="required"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-lg btn-outline-info"> Predict the mutation of cancer</button>
+                </form>
+                {{ prediction }}
+                <footer>
+                    <h6>Made with ❤️ by Debadri Sengupta</h6>
+                    <a target="_blank" href="https://github.com/Debadri3/Personalized-Cancer-Diagnosis"> <i class="fab fa-github fa-lg contact-icon" aria-hidden="true"></i> </a>
+                    <a target="_blank" href="https://www.linkedin.com/in/debadri-sengupta-61665a14b/"> <i class="fab fa-linkedin fa-lg contact-icon" aria-hidden="true"></i> </a>
+                </footer>
+            </div>
+            <!-- TV series Banner - 2 -->
+            <div class='ipl-banner-right'>
+
+                <div class="slider-frame">
+                    <div class="slide-images-down">
+
+                        <div class="image-container">
+                            <img class="image-width" src="{{ url_for('static', filename='1.png') }}"
+                                >
+                        </div>
+                        <!-- Image-2 -->
+                        <div class="image-container">
+                            <img class="image-width" src="{{ url_for('static', filename='2.png') }}"
+                                >
+                        </div>
+                        <!-- Image-3 -->
+                        <div class="image-container">
+                            <img class="image-width" src="{{ url_for('static', filename='3.png') }}"
+                                >
+                        </div>
+                        <!-- Image-4 -->
+                        <div class="image-container">
+                            <img class="image-width" src="{{ url_for('static', filename='4.png') }}"
+                                >
+                        </div>
+                        <!-- Image-5 -->
+                        <div class="image-container">
+                            <img class="image-width" src="{{ url_for('static', filename='5.png') }}"
+                                >
+                        </div>
+                        <!-- Image-6 -->
+                        <div class="image-container">
+                            <img class="image-width" src="{{ url_for('static', filename='6.png') }}"
+                                >
+                        </div>
+                        <!-- Image-7 -->
+                        <!-- <div class="image-container">
+                            <img class="image-width" src="{{ url_for('static', filename='7.png') }}"
+                                >
+                        </div> -->
+                        <!-- Image-8 -->
+                        <!-- <div class="image-container">
+                            <img class="image-width" src="{{ url_for('static', filename='8.png') }}"
+                                >
+                        </div> -->
+
+                    </div>
+                </div>
+            </div>
+        </div>
+   
+</body>
+</html>
