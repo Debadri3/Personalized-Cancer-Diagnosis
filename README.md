@@ -1,6 +1,8 @@
 Heroku deployment URL: https://personalized-cancer-api.herokuapp.com
 
-AWS Elastic Beanstalk deployment URL (inactive): http://personalizedcancerdiagnosis-env.eba-mqtnsamu.us-east-2.elasticbeanstalk.com/
+Please see below video in case Heroku link is inactive-
+
+[screen-capture-cancer.webm](https://user-images.githubusercontent.com/62327777/211173298-085a10fa-14e7-411a-9bbb-987288ffdca3.webm)
 
 Blog post for the project: https://medium.com/analytics-vidhya/redefining-cancer-treatment-the-memorial-sloan-way-b71ef4eed284
 
